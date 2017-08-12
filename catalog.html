@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Нёрдс - Магазин</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="header-nav">
+                <a class="header-logo" href="index.html">
+                    <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип дизайн-студии «Нёрдс»">
+                </a>
+                <ul class="list-nav">
+                    <li><a href="studio.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html" class="item-currently">Магазин</a></li>
+                    <li><a href="contacts">Контакты</a></li>
+                </ul>
+                <ul class="list-purchases">
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <h1>Магазин готовых шаблонов</h1>
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр</h2>
+                <form class="filter" action="#" method="get">
+                    <fieldset>
+                        <legend>Стоимость:</legend>
+                        <p>
+                            от
+                            <input class="visually-hidden cost-from" type="text" name="from" placeholder="0">
+                            до
+                            <input class="visually-hidden cost-to" type="number" name="to" placeholder="15 000">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptiv" checked>
+                                Адаптивная
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed">
+                                Фиксированная
+                            </li>
+                            <li class="filter-option">
+                                Резиновая
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+                                Слайдер
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block">
+                                Блок преимуществ
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                                Новости
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                                Галерея
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="purchases">
+                                Корзина
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button catalog-button">Показать</button>
+                </form>
+            </section>
+            <section class="products">
+                <h2 class="visually-hidden">Продукты</h2>
+                <b>Сортировать:</b>
+                <ul class="sorting-list">
+                    <li class="sorting-item sorting-item-currently">По цене</li>
+                    <li class="sorting-item">По типу</li>
+                    <li class="sorting-item">По названию</li>
+                </ul>
+                <ul class="product-list">
+                    <li class="product-item product-item-currently">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Sedona">
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Pink">
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Borodinski">
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Mishka">
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон A+">
+                        </a>
+                    </li>
+                    <li class="product-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Kvast">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-currently"><a>1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item catalog-button"><a href="#">Следующая</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="map-footer">
+                <section class="contacts-footer">
+                    <p><b>Nёrds design studio</b></p>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="button" href="#">Напишите нам</a>
+                </section>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+            <div class="discount">
+                <p><b>Давайте дружить, это выгодно!</b></p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
+        <section class="modal modal-write">
+            <h2>Напишите нам</h2>
+            <form class="name-form" action="#" method="post">
+                <p>Ваше имя:</p>
+                <p>
+                    <input class="name-user" type="text" name="name" placeholder="Представтесь, пожалуйста">
+                </p>
+                <p>Ваш e-mail:</p>
+                <p>
+                    <input class="mail-user" type="text" name="mail" placeholder="Для отправки ответа">
+                </p>
+                <p>Текст письма:</p>
+                <p>
+                    <textarea class="message" name="message" placeholder="В свободной форме"></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+            <span class="modal-close">x</span>
+        </section>
+        <section class="buy-sedona">
+            <h3><a href="#">Sedona</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 Руб.</a>
+        </section>
+        <section class="buy-a+">
+            <h3><a href="#">A plus</a></h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="button" href="#">9 900 Руб.</a>
+        </section>
+        <section class="buy-kvast">
+            <h3><a href="#">Кваст</a></h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a class="button" href="#">9 900 Руб.</a>
+        </section>
+    </body>
+</html>
