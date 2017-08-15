@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс - Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="header-nav">
         <a class="header-logo" href="index.html">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип дизайн-студии «Нёрдс»">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="list-nav">
           <li><a href="studio.html">Студия</a></li>
@@ -22,7 +23,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="filter" action="#" method="get">
@@ -110,32 +111,32 @@
         <ul class="product-list">
           <li class="product-item product-item-currently">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Sedona">
+              <img src="img/product-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
             </a>
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Pink">
+              <img src="img/product-pink.jpg" width="360" height="576" alt="Шаблон Pink">
             </a>
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Borodinski">
+              <img src="img/product-barbershop.jpg" width="360" height="576" alt="Шаблон Borodinski">
             </a>
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Mishka">
+              <img src="img/product-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
             </a>
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон A+">
+              <img src="img/product-a+.jpg" width="360" height="576" alt="Шаблон A+">
             </a>
           </li>
           <li class="product-item">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Шаблон Kvast">
+              <img src="img/product-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
             </a>
           </li>
         </ul>
@@ -149,16 +150,14 @@
     </main>
     <footer class="main-footer">
       <div class="map-footer">
-        <a href="#">
-          <img class="map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта офиса">
-        </a>
-        <section class="contacts-footer">
+        <a href="#">Расположение офиса</a>
+        <div class="contacts-footer">
           <h3 class="visually-hidden">Контакты</h3>
           <p><b>Nёrds design studio</b></p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="button" href="#">Напишите нам</a>
-        </section>
+        </div>
       </div>
       <div class="footer-social">
         <ul>
@@ -173,7 +172,7 @@
       </div>
     </footer>
     <section class="modal modal-write">
-      <h2>Напишите нам</h2>
+      <h2 class="write-title">Напишите нам</h2>
       <form class="name-form" action="#" method="post">
         <label>  
           Ваше имя:
@@ -192,17 +191,32 @@
       <span class="modal-close">x</span>
     </section>
     <section class="buy-sedona">
-      <h3><a href="#">Sedona</a></h3>
+      <h3 class="buy-title"><a href="#">Sedona</a></h3>
       <p>Информационный сайт для туристов</p>
       <a class="button" href="#">9 900 Руб.</a>
     </section>
+    <section class="buy-pink">
+      <h3 class="buy-title"><a href="#">Pink App</a></h3>
+      <p>Продуктовый лендинг приложения для iOS и Android</p>
+      <a class="button" href="#">9 900 Руб.</a>
+    </section>
+    <section class="buy-barbershop">
+      <h3 class="buy-title"><a href="#">Barbershop</a></h3>
+      <p>Сайт салона красоты. Для мужчин, да.</p>
+      <a class="button" href="#">9 900 Руб.</a>
+    </section>
+    <section class="buy-mishka">
+      <h3 class="buy-title"><a href="#">Mishka</a></h3>
+      <p>Интернет-магазин вязаных игрушек</p>
+      <a class="button" href="#">9 900 Руб.</a>
+    </section>
     <section class="buy-a+">
-      <h3><a href="#">A plus</a></h3>
+      <h3 class="buy-title"><a href="#">A plus</a></h3>
       <p>Лендинг курсов повышения квалификации</p>
       <a class="button" href="#">9 900 Руб.</a>
     </section>
     <section class="buy-kvast">
-      <h3><a href="#">Кваст</a></h3>
+      <h3 class="buy-title"><a href="#">Кваст</a></h3>
       <p>Промо-сайт производителя крафтового кваса</p>
       <a class="button" href="#">9 900 Руб.</a>
     </section>
