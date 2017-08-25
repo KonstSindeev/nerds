@@ -48,7 +48,7 @@
             </p>
           </div>
           <input class="visually-hidden slider-input" type="radio" name="slider-main" value="second-slide">
-          <div class="slide-description slide-description-2">
+          <div class="visually-hidden slide-description slide-description-2">
             <p><b>Любим математику как никто другой</b></p>
             <p>Никакого креатива, только математические формулы<br> 
             для расчет идеальных пропорций.</p>
@@ -57,7 +57,7 @@
             </p>
           </div>
           <input class="visually-hidden slider-input" type="radio" name="slider-main" value="third-slide">
-          <div class="slide-description slide-description-3">
+          <div class="visually-hidden slide-description slide-description-3">
             <p><b>Только ночь, только хардкор</b></p>
             <p>Работать днем, как все? Мы против этого.<br> 
             Ближе к полуночи работа только начинается.</p>
@@ -69,10 +69,10 @@
       </section>
         
       <div class="container-align">
-        <section class="Services">
+        <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="list-services">
-            <li class="web-sites">
+            <li class="services-item">
               <h3>Веб-сайты</h3>
               <p class="services-info">Мир никогда не будет прежним после того как увидит наш сайт!</p>
               <p class="services-image">
@@ -82,7 +82,7 @@
                 <a class="button services-button services-button-1" href="#">Заказать</a>
               </p>
             </li>
-            <li class="apps">
+            <li class="services-item">
               <h3>Приложения</h3>
               <p class="services-info">Покорите топ-10 приложений в AppStore и Google Play</p>
               <p class="services-image">
@@ -92,7 +92,7 @@
                 <a class="button services-button services-button-2" href="#">Заказать</a>
               </p>
             </li>
-            <li class="web-sites">
+            <li class="services-item">
               <h3>Презентации</h3>
               <p class="services-info">Вы даже не подозреваете, насколько вы изумительны!</p>
               <p class="services-image">
@@ -108,7 +108,7 @@
         <section class="about-us">
           <h2 class="visually-hidden">О нас</h2>
           <div class="about-us-1">
-            <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p><b>Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</b></p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <h4>Выполняем заказы на разработку:</h4>
             <ul>
@@ -140,22 +140,22 @@
         <article class="partners">
           <h2 class="visually-hidden">Партнеры</h2>
           <ul class="partners-list">
-            <li>
+            <li class="partner-item">
               <a class="partner-img" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML Academy">
               </a>
             </li>
-            <li>
+            <li class="partner-item">
               <a class="partner-img" href="#">
                 <img src="img/logo-barbershop.png" width="209" height="90" alt="Barbershop Borodinski">
               </a>
             </li>
-            <li>
+            <li class="partner-item">
               <a class="partner-img" href="#">
                 <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
               </a>
             </li>
-            <li>
+            <li class="partner-item">
               <a class="partner-img" href="#">
                 <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
               </a>
@@ -170,36 +170,44 @@
      
       <div class="map-footer">
         <a class="visually-hidden" href="#">Расположение офиса</a>
-        <div class="contacts-footer">
-          <h3 class="visually-hidden">Контакты</h3>
-          <b>Nёrds design studio</b>
-          <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            тел. +7 (812) 275-75-75
-          </p>
-          <a class="button slide-feedback-button" href="#">Напишите нам</a>
+        <div class="container-align">
+          <div class="container-contacts">
+            <div class="contacts-footer">
+              <h3 class="visually-hidden">Контакты</h3>
+              <b>Nёrds design studio</b>
+              <p>
+                191186, Санкт-Петербург, <br>
+                ул. Б. Конюшенная, д. 19/8 <br>
+                тел. +7 (812) 275-75-75
+              </p>
+              <a class="button slide-feedback-button" href="#">Напишите нам</a>
+            </div>
+          </div>
         </div>
       </div>
       
-      <div class="footer-social">
-        <ul class="social-list">
-          <li><a class="button social-button" href="#">Вконтакте</a></li>
-          <li><a class="button social-button" href="#">Фейсбук</a></li>
-          <li><a class="button social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
+      <div class="container-align">
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <ul class="social-list">
+              <li><a class="button social-button" href="#">Вконтакте</a></li>
+              <li><a class="button social-button" href="#">Фейсбук</a></li>
+              <li><a class="button social-button" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
       
-      <div class="discount">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
+          <div class="discount">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
+        </div>
       </div>
-      
     </footer>
     
     
-    <section class="modal modal-write">
+    <section class="visually-hidden modal modal-write">
       <h2 class="write-title">Напишите нам</h2>
       <form class="name-form" action="#" method="post">
         <p class="write-name">

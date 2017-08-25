@@ -482,8 +482,7 @@ body {
 }
 
 .container-align {
-  width: 1200px;
-  
+  width: 1160px;
   padding: 0px 20px;
   margin: 0 auto;
   
@@ -514,33 +513,174 @@ body {
 }
 
 .list-nav {
+  display: flex;
+  justify-content: space-between;
   flex-basis: 560px;
+  margin-bottom: 9px;
+}
+
+.list-nav li:first-child {
+  margin-left: 62px;
+}
+
+.list-nav li:last-child {
+  margin-right: 60px;
 }
 
 .list-purchases {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
   flex-basis: 200px;
+  margin-bottom: 9px;
 }
 
 .slider {
   height: 411px;
+  margin-bottom: 80px;
   
   outline: 1px solid red;
 }
 
 .header-logo img {
-  background-color: red;
+  display: block;
 }
 
-.main-header {
-  margin: 0;
+.slide-description p {
+  margin-top: 0;
 }
 
-.container {
+.list-services {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 427px;
   margin: 0;
+  padding:0;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #eee;
+  
+  outline: 1px solid red;
+}
+
+.services-item {
+  flex-basis: 300px;
+  
+  outline: 2px solid orange;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  height: 445px;
+  
+  border-bottom: 2px solid #eee;
+  
+  outline: 1px solid red;
+}
+
+.about-us-1 {
+  flex-basis: 660px;
+  
+  outline: 2px solid orange;
+}
+
+.about-us-2 {
+  flex-basis: 360px;
+  
+  outline: 2px solid orange;
+}
+
+.partners-list {
+  display: flex;
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid: #eee;
+  margin-bottom: 80px;
+  
+  outline: 1px solid red;
+}
+
+.partner-item {
+  outline: 2px solid orange;
+}
+
+.partner-item:first-child {
+  padding: 62px 50px 50px 31px;
+}
+
+.partner-item:nth-child(2) {
+  padding: 46px 45px 48px 46px;
+}
+
+.partner-item:nth-child(3) {
+  padding: 65px 57px 63px 58px;
+}
+
+.partner-item:last-child {
+  padding: 52px 43px 44px 64px;
 }
 
 .main-footer {
-  
-  
   outline: 1px solid red;
+}
+
+.map-footer {
+  width: 100%;
+  height: 416px;
+  
+  background-color: #eee;
+  background-image: url(img/map.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  
+  outline: 2px solid orange
+}
+
+.container-contacts {
+  display: flex;
+  width: 319px;
+  height: 416px;
+
+  outline: 3px solid yellow;
+}
+
+.contacts-footer {
+  flex-basis: 319px;
+  align-self: center;
+  
+  padding-top: 54px;
+  padding-bottom: 54px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+  background-color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  height: 217px;
+  
+  outline: 2px solid orange;
+}
+
+.footer-social,
+.discount {
+  align-self: center;
+  outline: 3px solid yellow;
+}
+
+.footer-social {
+  flex-basis: 260px;
+  margin-right: 140px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 0;
+  padding: 0;
 }
