@@ -209,11 +209,8 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000;
-  
-  background-color: #eee;
-  background-image: url(img/fon-up.png);
-  background-position: 0 0;
-  background-repeat: repeat;
+
+  margin: 0;
 }
 
 .filter fieldset {
@@ -458,6 +455,7 @@ a {
 }
 
 .buy-description {
+  text-align: center;
   line-height: 18px;
   color: #666666;
 }
@@ -683,4 +681,132 @@ body {
   
   margin: 0;
   padding: 0;
+}
+
+/*Сетка каталога*/
+
+.page-title {
+  width: 100%;
+  padding: calc((241px - 55px)/2) 0;
+  text-align: center;
+  margin-bottom: 60px;
+  
+  outline: 1px solid red;
+}
+
+.wrapper-main {
+  display: flex;
+}
+
+.filters {
+  flex-basis: 260px;
+  margin-right: 140px;
+  
+  outline: 1px solid red;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  
+  outline: 1px solid red;
+}
+
+.wrapper-sorting {
+  display: flex;
+  margin-bottom: 60px;
+  
+  outline: 2px solid orange;
+}
+
+.wrapper-sorting b,
+.sorting-list {
+  outline: 3px solid yellow;
+}
+
+.wrapper-sorting b {
+  flex-basis: 160px;
+  margin-right: 240px;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-list-main {
+  flex-basis: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-list-main li:last-child {
+  margin-right: 29px;
+}
+
+.arrow-list {
+  display: flex;
+  justify-content: flex-end;
+  
+  width: 60px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 1914px;
+  
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.product-item {
+  outline: 2px solid orange;
+}
+
+.product-img {
+  display: block;
+  margin-top: 40px;
+  
+  border: 1px solid #eee;
+}
+
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  flex-basis: 50px;
+  width: 443px;
+  display: flex;
+  justify-content: space-between;
+  
+  outline: 2px solid orange;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  
+  height: 231px;
+  width: 360px;
+  
+  background-color: #eee;
+  
+  outline: 1px solid red;
+}
+
+.buy-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 152px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+  outline: 2px solid orange;
 }
