@@ -633,6 +633,7 @@ body {
   background-image: url(img/map.png);
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100%;
   
   outline: 2px solid orange
 }
