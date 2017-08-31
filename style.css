@@ -771,9 +771,9 @@ fieldset.filter-cost {
   border: none;
 }
 
-.filter input[type="radio"],
-.filter input[type="checkbox"] {
-  display: none;
+.filter input[type="radio"]:focus,
+.filter input[type="checkbox"]:focus {
+  
 }
 
 .filter-type-item,
@@ -806,7 +806,9 @@ fieldset.filter-cost {
   background-repeat: no-repeat;
 }
 
-.filter-type-item label:hover::before {
+.filter-type-item label:hover::before,
+.filter-input[type="radio"]:focus ~ label::before,
+.filter-input[type="checkbox"]:focus ~ label::before {
   opacity: 1;
 }
 
@@ -1060,15 +1062,13 @@ fieldset.filter-features {
   opacity: .12;
 }
 
-.product-item a.product-link:hover::before,
-.product-item a.product-link:focus::before,
-.product-item .buy:hover ~ .product-item a.product-link::before,
-.product-item .buy:focus ~ .product-item a.product-link::before {
+a.product-link:hover::before,
+a.product-link:focus::before {
   opacity: 1;
 }
 
-.product-item a.product-link:hover ~ .buy,
-.product-item a.product-link:focus ~ .buy,
+a.product-link:hover ~ .buy,
+a.product-link:focus ~ .buy,
 .product-item .buy:hover,
 .product-item .buy:focus {
   visibility: visible;
@@ -1127,6 +1127,12 @@ fieldset.filter-features {
   
   margin-bottom: 30px;
   margin-top: 14px;
+}
+
+.buy-pink .buy-description,
+.buy-aplus .buy-description,
+.buy-kvast .buy-description {
+  width: 240px;
 }
 
 .buy-button {
