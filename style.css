@@ -390,7 +390,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 427px;
+  min-height: 427px;
   margin: 0;
   padding:0;
   margin-bottom: 40px;
@@ -1182,14 +1182,16 @@ fieldset.filter-features {
 }
 
 a.product-link:hover::before,
-a.product-link:focus::before {
+a.product-link:focus::before,
+.buy:hover * a.product-link::before,
+.buy:focus * a.product-link::before {
   opacity: 1;
 }
 
 a.product-link:hover ~ .buy,
 a.product-link:focus ~ .buy,
-.product-item .buy:hover,
-.product-item .buy:focus {
+.buy:hover,
+.buy:focus {
   visibility: visible;
 }
 
@@ -1273,6 +1275,8 @@ a.product-link:focus ~ .buy,
 .buy-button {
   padding: 16px 0px;
   width: 100%;
+  
+  margin-bottom: 42px;
 }
 
 .buy-button:active {
@@ -1403,7 +1407,7 @@ a.product-link:focus ~ .buy,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 217px;
+  min-height: 217px;
 }
 
 .footer-social,
