@@ -682,6 +682,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: .04em;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000;
 }
 
 fieldset.filter-cost {
@@ -771,9 +772,9 @@ fieldset.filter-cost {
   border: none;
 }
 
-.filter input[type="radio"]:focus,
-.filter input[type="checkbox"]:focus {
-  
+.filter-input[type="radio"] + label,
+.filter-input[type="checkbox"] + label {
+  cursor: pointer;
 }
 
 .filter-type-item,
@@ -1325,16 +1326,64 @@ a.product-link:focus ~ .buy,
   margin-top: 10px;
 }
 
+.modal {
+  position: fixed;
+  
+  bottom: 180px;
+  left: calc(50% - 480px);
+}
+
+.modal-write {
+  display: none;
+  padding: 0 100px;
+  
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75)
+}
+
 .write-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
+  
+  margin: 0;
+  padding: 0;
+  
+  margin-top: 66px;
+  margin-bottom: 40px;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  
+  min-width: 760px;
+}
+
+.modal-write p {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-write-column {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-bottom: 30px;
+}
+
+.modal-write-column .write-name,
+.modal-write-column .write-email {
+  flex-basis: 360px;
 }
 
 .modal-write label {
+  display: inline-block;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  
+  margin-bottom: 10px;
 }
 
 .modal-write input[type="text"],
@@ -1343,12 +1392,20 @@ a.product-link:focus ~ .buy,
   border: 2px solid #d7dcde;
 }
 
+.modal-write textarea {
+  height: 85px;
+}
+
 .modal-write input[placeholder],
 .modal-write textarea[placeholder] {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
   color: #444;
   opacity: .5;
+  width: calc(100% - (14px * 2));
+  
+  padding: 13px 14px;
 }
 
 .modal-write input[type="text"]:hover,
@@ -1383,4 +1440,64 @@ a.product-link:focus ~ .buy,
   line-height: 18px;
   color: #e74246;
   opacity: 1;
+}
+
+.modal-write .button {
+  padding: 16px 84px;
+  align-self: flex-start;
+  margin-top: 44px;
+  margin-bottom: 84px;
+}
+
+.modal-close {
+  position: absolute;
+  
+  top: 78px;
+  right: 90px;
+  
+  font-size: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  
+  cursor: pointer
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 0;
+
+  width: 29px;
+  height: 4px;
+
+  background-color: #fb565a;
+  opacity: .3;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:focus::before,
+.modal-close:hover::after,
+.modal-close:focus::after {
+  opacity: 1;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  opacity: .1;
 }

@@ -228,24 +228,26 @@
     </footer>
     
     
-    <section class="visually-hidden modal modal-write">
+    <section class="modal modal-write">
       <h2 class="write-title">Напишите нам</h2>
       <form class="name-form" action="#" method="post">
-        <p class="write-name">
-          <label for="name">Ваше имя:</label>
-          <input class="input-area name-user" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p class="write-email">
-          <label for="email">Ваш e-mail:</label>
-          <input class="input-area mail-user" type="email" id="email" name="mail" placeholder="Для отправки ответа">
-        </p>
+        <div class="modal-write-column">
+          <p class="write-name">
+            <label for="name">Ваше имя:</label>
+            <input class="input-area name-user" type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" pattern="[0-9a-zA-zА-Яа-яЁ-ё]+">
+          </p>
+          <p class="write-email">
+            <label for="email">Ваш e-mail:</label>
+            <input class="input-area mail-user" type="email" id="email" name="mail" placeholder="Для отправки ответа" pattern="[0-9a-zA-zА-Яа-яЁ-ё]+">
+          </p>
+        </div>
         <p class="write-area">
         <label for="message">Текст письма:</label>
-          <textarea class="input-area message" id="message" name="message" placeholder="В свободной форме"></textarea>
+          <textarea class="input-area message" id="message" name="message" placeholder="В свободной форме" pattern="[0-9a-zA-zА-Яа-яЁ-ё]+"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Закрыть</button>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
     
