@@ -82,7 +82,7 @@ input[type="radio"].visually-hidden {
 
 .fon-up {
   background-color: #eee;
-  background-image: url(img/fon-up.png);
+  background-image: url("../img/fon-up.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -210,7 +210,7 @@ input[type="radio"].visually-hidden {
   top: 7px;
   left: -40px;
   
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -341,7 +341,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   width: 100%;
   
-  background-image: url(img/slide-first.png);
+  background-image: url("../img/slide-first.png");
   background-position: 431px 17px;
   background-repeat: no-repeat;
 }
@@ -358,7 +358,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   width: 100%;
   
-  background-image: url(img/slide-second.png);
+  background-image: url("../img/slide-second.png");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
@@ -375,7 +375,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   width: 100%;
   
-  background-image: url(img/slide-third.png);
+  background-image: url("../img/slide-third.png");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
@@ -900,13 +900,13 @@ fieldset.filter-cost {
 }
 
 .filter-type-item label::before {
-  background-image: url(img/radio-off.svg);
+  background-image: url("../img/radio-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .filter-input-radio:checked ~ label::before {
-  background-image: url(img/radio-on.svg);
+  background-image: url("../img/radio-on.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -930,13 +930,13 @@ fieldset.filter-cost {
 }
 
 .filter-features-item label::before {
-  background-image: url(img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked ~ label::before {
-  background-image: url(img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1183,7 +1183,7 @@ fieldset.filter-features {
   width: 100%;
   height: 40px;
   
-  background-image: url(img/browser.svg);
+  background-image: url("../img/browser.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   
@@ -1350,7 +1350,7 @@ a.product-link:focus ~ .product-item::before {
   min-height: 416px;
   
   background-color: #eee;
-  background-image: url(img/map.png);
+  background-image: url("../img/map.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
