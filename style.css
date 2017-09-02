@@ -265,6 +265,7 @@ input[type="radio"].visually-hidden {
 
 .slider-wrapper label {
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   
   top: 316px;
@@ -323,6 +324,7 @@ input[type="radio"].visually-hidden {
 
 .slide-feedback-button {
   display: inline-block;
+  vertical-align: middle;
   
   padding: 16px 55px;
 }
@@ -447,6 +449,7 @@ input[type="radio"].visually-hidden {
 
 .services-button-1 {
   display: inline-block;
+  vertical-align: middle;
   padding: 16px 40px;
   margin-top: 32px;
   
@@ -466,6 +469,7 @@ input[type="radio"].visually-hidden {
 
 .services-button-2 {
   display: inline-block;
+  vertical-align: middle;
   padding: 16px 40px;
   margin-top: 32px;
   
@@ -485,6 +489,7 @@ input[type="radio"].visually-hidden {
 
 .services-button-3 {
   display: inline-block;
+  vertical-align: middle;
   padding: 16px 40px;
   margin-top: 32px;
   
@@ -542,6 +547,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-1 b {
   display: inline-block;
+  vertical-align: middle;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -552,6 +558,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-1 p {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 34px;
 }
 
@@ -596,6 +603,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-2 b {
   display: inline-block;
+  vertical-align: middle;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
@@ -761,6 +769,7 @@ input[type="radio"].visually-hidden {
 
 .filter legend {
   display: inline-block;
+  vertical-align: middle;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: .04em;
@@ -1167,7 +1176,7 @@ fieldset.filter-features {
   top: 383px;
 }
 
-.product-item a.product-link::before {
+.product-item::before {
   content: "";
   position: absolute;
   
@@ -1181,17 +1190,12 @@ fieldset.filter-features {
   opacity: .12;
 }
 
-a.product-link:hover::before,
-a.product-link:focus::before,
-.buy:hover * a.product-link::before,
-.buy:focus * a.product-link::before {
+.product-item:hover::before,
+a.product-link:focus ~ .product-item::before {
   opacity: 1;
 }
 
-a.product-link:hover ~ .buy,
-a.product-link:focus ~ .buy,
-.buy:hover,
-.buy:focus {
+.product-item:hover .buy {
   visibility: visible;
 }
 
@@ -1378,6 +1382,7 @@ a.product-link:focus ~ .buy,
 
 .contacts-footer b {
   display: inline-block;
+  vertical-align: middle;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1398,6 +1403,7 @@ a.product-link:focus ~ .buy,
 
 .feedback-button {
   display: inline-block;
+  vertical-align: middle;
   white-space: nowrap;
   padding: 16px 45px;
   margin-top: 36px;
@@ -1475,6 +1481,7 @@ a.product-link:focus ~ .buy,
 
 .discount b {
   display: inline-block;
+  vertical-align: middle;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -1555,6 +1562,7 @@ a.product-link:focus ~ .buy,
 
 .modal-write label {
   display: inline-block;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
