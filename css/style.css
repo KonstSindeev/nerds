@@ -1187,17 +1187,20 @@ fieldset.filter-features {
 
 .product-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .product-item .buy {
   position: absolute;
-  
-  top: 383px;
 }
 
 .product-item::before {
   content: "";
   position: absolute;
+  
+  top: 0;
   
   width: 100%;
   height: 40px;
@@ -1237,8 +1240,7 @@ a.product-link:focus ~ .product-item::before {
       -ms-flex-align: center;
           align-items: center;
   
-  
-  height: 231px;
+  min-height: 231px;
   width: 360px;
   
   background-color: #eee;
