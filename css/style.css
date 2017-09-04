@@ -1530,16 +1530,14 @@ a.product-link:focus ~ .product-item::before {
 .modal {
   position: fixed;
   
-  top: 180px;
-  bottom: 180px;
-  left: calc(50% - 480px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
 .modal-write {
   display: none;
   padding: 0 100px;
-  
-  overflow: scroll;
   
   background-color: #fff;
   -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
