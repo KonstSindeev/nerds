@@ -1428,7 +1428,8 @@ a.product-link:focus ~ .product-item::before {
   width: 100%;
   max-width: 1440px;
   height: 416px;
-  border: 0;
+  border: none;
+  outline: none;
 }
 
 .container-contacts {
