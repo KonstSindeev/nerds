@@ -1423,7 +1423,11 @@ a.product-link:focus ~ .product-item::before {
   height: 416px;
 }
 
-.map-interactive iframe {
+.map-interactive img {
+  max-width: inherit;
+}
+
+.map-interactive .YMaps {
   min-width: 1200px;
   width: 100%;
   max-width: 1440px;
@@ -1484,7 +1488,6 @@ a.product-link:focus ~ .product-item::before {
 
 .contacts-tel a {
   text-decoration: none;
-  color: #283136;
 }
 
 .feedback-button {
@@ -1600,16 +1603,16 @@ a.product-link:focus ~ .product-item::before {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -1619,16 +1622,16 @@ a.product-link:focus ~ .product-item::before {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+  33% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+  67% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -1640,8 +1643,8 @@ a.product-link:focus ~ .product-item::before {
   display: block;
   -webkit-animation-name: bounce;
           animation-name: bounce;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
+  -webkit-animation-duration: .1s;
+          animation-duration: .1s;
 }
 
 @-webkit-keyframes error {
