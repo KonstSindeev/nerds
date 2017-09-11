@@ -741,16 +741,6 @@ input[type="radio"].visually-hidden {
 
 .partner-link {
   display: block;
-  opacity: .2;
-}
-
-.partner-link:hover,
-.partner-link:focus {
-  opacity: 1;
-}
-
-.partner-link:active {
-  opacity: .1;
 }
 
 .page-title {
